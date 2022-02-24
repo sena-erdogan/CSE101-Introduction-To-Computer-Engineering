@@ -1,0 +1,42 @@
+load R0, 5
+load R1, 4
+load R2, 7
+load R3, 6
+load R4, 2
+load R5, 3
+load R6, 9
+load R7, 4
+load R8, 11
+load R9, 7
+load RA, 10
+load RB, 5
+load RC, 8
+load RD, 4
+load RE, 6
+load RF, 5
+addi R0, R0,R1
+addi R0, R0,R2
+addi R0, R0,R3
+addi R0, R0,R4
+addi R0, R0,R5
+addi R0, R0,R6
+addi R0, R0,R7
+addi R0, R0,R8
+addi R0, R0,R9
+addi R0, R0,RA
+addi R0, R0,RB
+addi R0, R0,RC
+addi R0, R0,RD
+addi R0, R0,RE
+addi R0, R0,RF
+load R1, 0
+load R2, 16
+load R3, 1
+load R4, 255
+xor R5, R2,R4
+jmpLE R2<=R0, 39
+jmp 41
+addi R5, R5,R3
+jmp 37
+load R0, [R1]
+halt
